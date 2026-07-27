@@ -102,12 +102,17 @@
         </div>
         <div class="field">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" title="Please enter a valid email address.">
+          <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address, e.g. name@example.com.">
         </div>
         <div class="field">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" maxlength="16" autocomplete="tel" pattern="[+]?[0-9\s\-\(\)]{7,16}" title="Please enter a valid phone number, digits only (with optional +, spaces, or hyphens).">
+          <input type="tel" id="phone" name="phone" maxlength="16" inputmode="numeric" autocomplete="tel" pattern="\+?[0-9]{7,15}" title="Digits only. You may start with + and your country code (7–15 digits total, no spaces, hyphens, or brackets).">
         </div>
+        <div class="field" style="position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden;" aria-hidden="true">
+          <label for="company">Leave this field blank</label>
+          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" id="form-loaded-at" name="form_loaded_at" value="">
         <div class="field">
           <label for="topic">Area of Enquiry</label>
           <select id="topic" name="topic">
