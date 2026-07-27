@@ -258,8 +258,13 @@ section { padding: 80px 0; }
 /* ===== Grids / Cards ===== */
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.section .grid-4, .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 @media (max-width: 900px) {
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .section .grid-4, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .section .grid-4, .grid-4 { grid-template-columns: 1fr; }
 }
 
 .card {
