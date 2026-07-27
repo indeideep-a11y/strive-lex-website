@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indeideep-a11y.github.io/strive-lex-website/sitemap.xml
