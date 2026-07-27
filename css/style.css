@@ -435,6 +435,41 @@ form input, form select, form textarea {
 form input:focus, form select:focus, form textarea:focus { outline: 1px solid var(--gold); border-color: var(--gold); }
 .form-note { font-size: 0.82rem; color: var(--gray); margin-top: 10px; font-family: 'Helvetica Neue', Arial, sans-serif; }
 
+/* ===== Legal Health Check tool ===== */
+.hc-question { margin-bottom: 18px; padding: 26px 32px; }
+.hc-question fieldset { border: none; padding: 0; margin: 0; }
+.hc-question legend {
+  padding: 0;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+.hc-options { display: flex; gap: 24px; }
+.hc-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--gray);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  cursor: pointer;
+}
+.hc-options input[type="radio"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+.hc-result h2 { color: var(--navy); margin-bottom: 4px; }
+
 /* ===== Contact info blocks ===== */
 .info-block { display: flex; gap: 16px; margin-bottom: 26px; }
 .info-block .icon-sm {
