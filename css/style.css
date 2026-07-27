@@ -17,6 +17,23 @@
 
 html { scroll-behavior: smooth; }
 
+/* ===== Accessibility: skip link ===== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--navy);
+  color: #fff;
+  padding: 12px 20px;
+  z-index: 10000;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  border-radius: 0 0 6px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
   color: var(--text-dark);
