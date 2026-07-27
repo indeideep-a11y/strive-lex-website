@@ -42,13 +42,6 @@
   </div>
 </div>
 
-<div class="topbar">
-  <div class="container">
-    <div><span class="sans">📍 B-278, Chittaranjan Park, New Delhi -110019</span><span class="sans">✉ <a href="mailto:advinderahluwalia@gmail.com" style="color:inherit;">advinderahluwalia@gmail.com</a></span></div>
-    <div><a href="contact.html" class="sans">Schedule a Consultation →</a></div>
-  </div>
-</div>
-
 <header class="site-header">
   <div class="nav-wrap">
     <a href="index.html" class="logo"><img src="assets/logo-icon.png" alt="Strive Lex" class="logo-icon"><span class="logo-text"><span class="logo-word">STRIVE&nbsp;LEX</span><span class="logo-sub">Clarity. Precision. Resolution.</span></span></a>
@@ -105,15 +98,15 @@
       <form id="contact-form">
         <div class="field">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required maxlength="80" pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s\.\-']{1,79}" title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only).">
+          <input type="text" id="name" name="name" required maxlength="80" autocomplete="name" pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s\.\-']{1,79}" title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only).">
         </div>
         <div class="field">
           <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required maxlength="120" title="Please enter a valid email address.">
+          <input type="email" id="email" name="email" required maxlength="120" autocomplete="email" title="Please enter a valid email address.">
         </div>
         <div class="field">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" maxlength="16" pattern="[+]?[0-9\s\-\(\)]{7,16}" title="Please enter a valid phone number, digits only (with optional +, spaces, or hyphens).">
+          <input type="tel" id="phone" name="phone" maxlength="16" autocomplete="tel" pattern="[+]?[0-9\s\-\(\)]{7,16}" title="Please enter a valid phone number, digits only (with optional +, spaces, or hyphens).">
         </div>
         <div class="field">
           <label for="topic">Area of Enquiry</label>
@@ -131,7 +124,7 @@
         </div>
         <div class="field">
           <label for="message">Tell Us About Your Matter</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+          <textarea id="message" name="message" rows="5" required minlength="10" maxlength="2000" title="Please enter a brief description of your matter (10–2000 characters)."></textarea>
         </div>
         <div class="field field-checkbox">
           <label class="checkbox-label">
