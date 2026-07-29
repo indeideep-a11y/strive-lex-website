@@ -602,9 +602,20 @@ footer.site-footer {
 .footer-grid ul { list-style: none; }
 .footer-grid li { margin-bottom: 10px; font-size: 0.9rem; }
 .footer-grid a:hover { color: var(--gold-light); }
-.footer-logo { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; }
-.footer-logo .logo-icon { height: 28px; width: auto; }
-.footer-logo span { color: #fff; }
+.footer-logo { display: flex; align-items: flex-start; gap: 10px; color: #fff; margin-bottom: 16px; }
+.footer-logo .logo-icon { height: 30px; width: auto; margin-top: 2px; }
+.footer-logo-text { display: flex; flex-direction: column; }
+.footer-logo-word { font-size: 1.3rem; font-weight: 700; color: #fff; letter-spacing: 0.02em; }
+.footer-logo-sub {
+  display: block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.01em;
+  color: #b9c2cd;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid var(--gold);
+}
 .footer-grid p { font-size: 0.88rem; color: #8b95a3; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -762,3 +773,71 @@ body.disclaimer-locked { overflow: hidden; }
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
 }
+
+/* ===== Interactive timeline (CIRP / Liquidation) ===== */
+.timeline-stage { margin-bottom: 14px; padding: 0; overflow: hidden; }
+.timeline-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+.timeline-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(201,162,75,0.14);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.timeline-title {
+  flex: 1;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 600;
+  color: var(--navy);
+  font-size: 1.02rem;
+}
+.timeline-time {
+  flex-shrink: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+}
+.timeline-chevron {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+.timeline-stage.open .timeline-chevron { transform: rotate(45deg); }
+.timeline-detail {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 26px;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+}
+.timeline-stage.open .timeline-detail {
+  max-height: 300px;
+  padding: 0 26px 20px;
+}
+.timeline-detail p { color: var(--gray); font-size: 0.95rem; line-height: 1.6; margin: 0; }
