@@ -6,17 +6,17 @@
 <title>Contact Strive Lex | Schedule a Legal Consultation in Delhi NCR</title>
 <meta name="description" content="Contact Strive Lex to schedule a confidential consultation with a Delhi NCR attorney on corporate, real estate, insolvency or dispute resolution matters.">
 <link rel="stylesheet" href="css/style.css">
-<link rel="canonical" href="https://indeideep-a11y.github.io/strive-lex-website/contact.html">
+<link rel="canonical" href="https://strivelex.com/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact Strive Lex | Schedule a Legal Consultation in Delhi NCR">
 <meta property="og:description" content="Contact Strive Lex to schedule a confidential consultation with a Delhi NCR attorney on corporate, real estate, insolvency or dispute resolution matters.">
-<meta property="og:url" content="https://indeideep-a11y.github.io/strive-lex-website/contact.html">
-<meta property="og:image" content="https://indeideep-a11y.github.io/strive-lex-website/assets/logo-full.png">
+<meta property="og:url" content="https://strivelex.com/contact.html">
+<meta property="og:image" content="https://strivelex.com/assets/logo-full.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact Strive Lex | Schedule a Legal Consultation in Delhi NCR">
 <meta name="twitter:description" content="Contact Strive Lex to schedule a confidential consultation with a Delhi NCR attorney on corporate, real estate, insolvency or dispute resolution matters.">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://indeideep-a11y.github.io/strive-lex-website/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://indeideep-a11y.github.io/strive-lex-website/contact.html"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://strivelex.com/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://strivelex.com/contact.html"}]}
 </script>
 </head>
 <body>
@@ -109,7 +109,10 @@
       <div class="notice-box">
         <strong>Please note:</strong> Submitting this enquiry form does not create an advocate-client relationship between you and Strive Lex. No relationship is formed until confirmed separately in writing. Please do not send confidential or privileged information through this form.
       </div>
-      <form id="contact-form">
+      <form id="contact-form" action="https://formsubmit.co/advinderahluwalia@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Enquiry — Strive Lex Website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <div class="field">
           <label for="name">Full Name</label>
           <input type="text" id="name" name="name" required maxlength="80" autocomplete="name" pattern="[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ\s\.\-']{1,79}" title="Please enter a valid name (letters, spaces, hyphens, and apostrophes only).">
@@ -124,7 +127,7 @@
         </div>
         <div class="field" style="position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden;" aria-hidden="true">
           <label for="company">Leave this field blank</label>
-          <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+          <input type="text" id="company" name="_honey" tabindex="-1" autocomplete="off">
         </div>
         <input type="hidden" id="form-loaded-at" name="form_loaded_at" value="">
         <div class="field">
@@ -151,10 +154,47 @@
             <span>I have read and agree to the <a href="legal-disclaimer.html">Legal Disclaimer</a>, <a href="privacy-policy.html">Privacy Policy</a>, and <a href="terms-of-use.html">Terms of Use</a>, and I understand that submitting this form does not create an advocate-client relationship.</span>
           </label>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        <p id="form-success" style="display:none;margin-top:16px;color:#1f7a3d;font-family:'Helvetica Neue',Arial,sans-serif;font-size:0.9rem;">Thanks — your message has been noted. (Demo form: connect this to a real email service before launch — see notes below.)</p>
+        <button type="submit" class="btn btn-primary" id="contact-submit-btn">Send Message</button>
+        <p id="form-error" style="display:none;margin-top:16px;color:#b3261e;font-family:'Helvetica Neue',Arial,sans-serif;font-size:0.9rem;">Something went wrong sending your message. Please try again, or email us directly at <a href="mailto:advinderahluwalia@gmail.com">advinderahluwalia@gmail.com</a>.</p>
+        <p id="form-success" style="display:none;margin-top:16px;color:#1f7a3d;font-family:'Helvetica Neue',Arial,sans-serif;font-size:0.9rem;">Thanks — your message has been sent. An attorney will personally review it and follow up with you shortly.</p>
         <p class="form-note">This form does not create an advocate-client relationship. Please avoid sharing confidential or privileged information until representation has been formally confirmed in writing.</p>
       </form>
+      <script>
+        (function() {
+          var form = document.getElementById('contact-form');
+          var loadedAt = document.getElementById('form-loaded-at');
+          if (loadedAt) loadedAt.value = Date.now();
+          if (!form) return;
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var btn = document.getElementById('contact-submit-btn');
+            var success = document.getElementById('form-success');
+            var error = document.getElementById('form-error');
+            success.style.display = 'none';
+            error.style.display = 'none';
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+            var data = new FormData(form);
+            fetch('https://formsubmit.co/ajax/advinderahluwalia@gmail.com', {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: data
+            }).then(function(res) {
+              if (!res.ok) throw new Error('Request failed');
+              return res.json();
+            }).then(function() {
+              form.reset();
+              success.style.display = 'block';
+              btn.disabled = false;
+              btn.textContent = 'Send Message';
+            }).catch(function() {
+              error.style.display = 'block';
+              btn.disabled = false;
+              btn.textContent = 'Send Message';
+            });
+          });
+        })();
+      </script>
     </div>
     <div>
       <div class="info-block">
