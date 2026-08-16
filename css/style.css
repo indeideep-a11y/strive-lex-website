@@ -841,3 +841,34 @@ body.disclaimer-locked { overflow: hidden; }
   padding: 0 26px 20px;
 }
 .timeline-detail p { color: var(--gray); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+/* FAQ accordion */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  color: var(--gold);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.faq-item[open] summary::after { content: "\2212"; }
+.faq-item p {
+  margin: 12px 0 0;
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

@@ -98,7 +98,7 @@
         <div class="card" style="padding:18px;">
           <div class="icon" style="width:32px;height:32px;font-size:0.95rem;margin-bottom:10px;">2</div>
           <h4 style="font-size:0.95rem;margin-bottom:6px;">An Attorney Reviews It</h4>
-          <p style="font-size:0.85rem;color:var(--gray);">Every enquiry is read personally &mdash; not routed through a call centre or bot.</p>
+          <p style="font-size:0.85rem;color:var(--gray);">Every enquiry is read personally &mdash; not routed through a call centre or bot, typically within one business day.</p>
         </div>
         <div class="card" style="padding:18px;">
           <div class="icon" style="width:32px;height:32px;font-size:0.95rem;margin-bottom:10px;">3</div>
@@ -175,6 +175,34 @@
             btn.disabled = true;
             btn.textContent = 'Sending…';
             var data = new FormData(form);
+
+            // Strive Lex Lead Intake & CRM automation (n8n). Non-blocking: if this
+            // fails, or the webhook URL below hasn't been set yet, email delivery
+            // via FormSubmit below still works normally.
+            var N8N_WEBHOOK_URL = 'https://REPLACE-WITH-YOUR-N8N-INSTANCE.app/webhook/strivelex-lead-intake';
+            try {
+              if (N8N_WEBHOOK_URL.indexOf('REPLACE-WITH-YOUR-N8N-INSTANCE') === -1) {
+                var leadPayload = {
+                  name: data.get('name'), email: data.get('email'), phone: data.get('phone'),
+                  topic: data.get('topic'), message: data.get('message'),
+                  _honey: data.get('_honey'), source_page: 'contact.html'
+                };
+                // NOTE (fixed in QA pass): Content-Type must stay text/plain here, not
+                // application/json. application/json is not a CORS-safelisted header
+                // value, so the browser would send a preflight OPTIONS request first —
+                // and a plain n8n Webhook node configured only for POST typically never
+                // answers that preflight, which would make every one of these calls fail
+                // silently, always, in every browser. text/plain keeps this a "simple
+                // request" (no preflight). The n8n workflow's Normalize Lead Data node
+                // parses the raw text back into JSON on arrival (see its updated code).
+                fetch(N8N_WEBHOOK_URL, {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+                  body: JSON.stringify(leadPayload)
+                }).catch(function(err) { if (window.console) console.warn('Lead automation webhook failed (non-blocking):', err); });
+              }
+            } catch (e) { /* silent */ }
+
             fetch('https://formsubmit.co/ajax/advinderahluwalia@gmail.com', {
               method: 'POST',
               headers: { 'Accept': 'application/json' },
