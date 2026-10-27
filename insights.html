@@ -18,6 +18,30 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://strivelex.com/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://strivelex.com/insights.html"}]}
 </script>
+<style>
+.ins-feature{background:var(--navy,#2a1f62);color:#fff;border-radius:var(--radius,8px);padding:36px;margin-bottom:36px;display:block}
+.ins-feature .eyebrow{color:var(--gold-light,#e3c680)}
+.ins-feature h2{color:#fff;font-size:1.6rem;margin:8px 0 12px}
+.ins-feature p{color:rgba(255,255,255,.82);max-width:720px;margin-bottom:18px}
+.ins-feature a.ins-btn{display:inline-block;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;color:#fff;border-bottom:1px solid var(--gold,#c9a24b);padding-bottom:2px}
+.ins-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:26px}
+.ins-chip{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.8rem;letter-spacing:.03em;border:1px solid var(--border,#ddd);background:#fff;color:var(--navy,#2a1f62);border-radius:20px;padding:8px 16px;cursor:pointer}
+.ins-chip[aria-pressed="true"]{background:var(--navy,#2a1f62);color:#fff;border-color:var(--navy,#2a1f62)}
+.ins-search{flex:1;min-width:200px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.9rem;border:1px solid var(--border,#ddd);border-radius:20px;padding:9px 16px;background:#fff}
+.ins-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.ins-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.ins-grid{grid-template-columns:1fr}.ins-feature{padding:26px}}
+.ins-card{background:#fff;border:1px solid var(--border,#ddd);border-top:3px solid var(--gold,#c9a24b);border-radius:var(--radius,8px);padding:24px;display:flex;flex-direction:column}
+.ins-card[hidden]{display:none}
+.ins-meta{display:flex;justify-content:space-between;gap:10px;font-family:'Helvetica Neue',Arial,sans-serif;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:12px}
+.ins-cat{color:var(--gold,#b08a30)}.ins-rt{color:var(--gray,#777);white-space:nowrap}
+.ins-card h3{font-size:1.08rem;margin-bottom:10px;line-height:1.35}
+.ins-card h3 a{color:var(--navy,#2a1f62)}
+.ins-card p{color:var(--gray,#666);font-size:.92rem;flex:1;margin-bottom:16px}
+.ins-more{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--navy,#2a1f62);border-bottom:1px solid var(--gold,#c9a24b);align-self:flex-start}
+.ins-empty{display:none;text-align:center;color:var(--gray,#666);padding:30px 0}
+.ins-count{font-family:'Helvetica Neue',Arial,sans-serif;font-size:.82rem;color:var(--gray,#666);margin-bottom:16px}
+</style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -81,187 +105,186 @@
   <div class="container">
     <div class="eyebrow sans">Insights</div>
     <h1>Legal Insights &amp; Updates</h1>
-    <p>Practical guidance from our attorneys on the legal issues that come up most often for businesses, startups, and companies going through insolvency proceedings.</p>
+    <p>Practical guidance from our attorneys on insolvency and the IBC, commercial litigation, arbitration, corporate and contract law, and the legal issues businesses meet most often.</p>
   </div>
 </div>
 
 <section>
   <div class="container">
-    <div class="grid-3">
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Corporate &amp; Contracts</div>
-          <h3>5 Contract Clauses Every Growing Business Should Review</h3>
-          <p>Overlooked terms in vendor and client agreements can create outsized risk. Here's what to check before you sign.</p>
-          <a href="insight-contract-clauses-review.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Insolvency &amp; Restructuring</div>
-          <h3>Understanding the CIRP Timeline Under the IBC</h3>
-          <p>A plain-language walkthrough of what happens, and in what order, once a Corporate Insolvency Resolution Process begins.</p>
-          <a href="insight-cirp-timeline-explained.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Startups &amp; Business Formation</div>
-          <h3>Choosing the Right Business Structure for Your Startup</h3>
-          <p>Private limited company, LLP, or partnership? The right structure affects fundraising, liability, and taxes down the road.</p>
-          <a href="insight-choosing-business-structure.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Insolvency &amp; Restructuring</div>
-          <h3>Section 7 vs Section 9 of the IBC: Which Route Applies to You</h3>
-          <p>Financial creditors and operational creditors take different statutory routes into the insolvency process — here's the difference.</p>
-          <a href="insight-section-7-vs-section-9.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Dispute Resolution &amp; Arbitration</div>
-          <h3>Mediation vs. Litigation: What Indian Businesses Should Know</h3>
-          <p>Not every dispute needs a courtroom. We break down when alternative dispute resolution makes sense — and when it doesn't.</p>
-          <a href="insight-mediation-vs-litigation.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Startups &amp; SMEs</div>
-          <h3>Founder Equity and Vesting: Common Mistakes We See</h3>
-          <p>Getting the initial equity split right matters less than most founders think. Getting the vesting terms right matters much more.</p>
-          <a href="insight-founder-equity-vesting-mistakes.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Litigation &amp; Dispute Resolution</div>
-          <h3>Cheque Bounce Cases in India: What Section 138 Actually Means</h3>
-          <p>A dishonoured cheque isn't just a banking problem — for the person who issued it, it can become a criminal case.</p>
-          <a href="insight-cheque-bounce-section-138.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Contracts &amp; Business Transactions</div>
-          <h3>Can You Be Sued Over a Verbal Agreement in India?</h3>
-          <p>Yes — and this is one of the most misunderstood areas of contract law we encounter. Here's why.</p>
-          <a href="insight-verbal-agreement-enforceability.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Corporate &amp; Commercial Advisory</div>
-          <h3>Can a Director Be Personally Liable for Company Debts?</h3>
-          <p>Limited liability protects directors in most circumstances — but not always. Here are the real exceptions.</p>
-          <a href="insight-director-personal-liability.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Insolvency &amp; Restructuring</div>
-          <h3>What Happens to a Personal Guarantee When a Company Enters Insolvency</h3>
-          <p>Many guarantors assume their personal guarantee is paused too. It usually isn't — here's why.</p>
-          <a href="insight-personal-guarantee-insolvency.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Litigation &amp; Dispute Resolution</div>
-          <h3>What Actually Happens If You Ignore a Legal Notice</h3>
-          <p>It's not a court order, so nothing happens immediately — but ignoring one is rarely the safe option it seems.</p>
-          <a href="insight-ignoring-legal-notice.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">International Clients</div>
-          <h3>NRI Property and Legal Disputes: Managing Matters in India From Abroad</h3>
-          <p>Distance is a real complication — but it isn't the obstacle most NRIs assume it is, with the right structure in place.</p>
-          <a href="insight-nri-property-disputes.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Contracts &amp; Business Transactions</div>
-          <h3>Are Non-Disclosure Agreements Actually Enforceable in India?</h3>
-          <p>Yes, but enforceability depends heavily on how specifically the agreement is drafted.</p>
-          <a href="insight-nda-enforceability.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Corporate &amp; Commercial Advisory</div>
-          <h3>What to Do When a Business Partner Wants to Exit</h3>
-          <p>This moment goes wrong far more often from a lack of process than from bad intentions on either side.</p>
-          <a href="insight-business-partner-exit.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Arbitration &amp; Mediation</div>
-          <h3>The Fine Print in Arbitration Clauses Most People Never Read</h3>
-          <p>A handful of details buried in the boilerplate can dramatically affect your leverage if a dispute ever arises.</p>
-          <a href="insight-arbitration-clause-fine-print.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">Litigation &amp; Dispute Resolution</div>
-          <h3>When Does a Business Dispute Become a Criminal Matter?</h3>
-          <p>Most commercial disputes are purely civil — but some conduct crosses into criminal territory.</p>
-          <a href="insight-civil-vs-criminal-business-dispute.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">International Clients</div>
-          <h3>How a Foreign Law Firm Engages Local Counsel in India</h3>
-          <p>Engaging India-based counsel for the first time doesn't need to be complicated — here's how it typically works.</p>
-          <a href="insight-engaging-local-counsel-india.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">International Clients</div>
-          <h3>What Overseas Firms Should Know Before Referring an NRI Property Matter</h3>
-          <p>A handful of details, clarified before the referral is made, meaningfully speed up how quickly counsel can act.</p>
-          <a href="insight-referring-nri-property-matter.html" class="learn">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="blog-thumb"></div>
-        <div class="body">
-          <div class="blog-date">International Clients</div>
-          <h3>Enforcing a Foreign Judgment or Arbitral Award in India</h3>
-          <p>The enforcement route depends heavily on one distinction that's easy to overlook early.</p>
-          <a href="insight-enforcing-foreign-judgment-india.html" class="learn">Read More →</a>
-        </div>
-      </div>
+    <a class="ins-feature" href="insight-section-8-demand-notice-ibc.html" style="text-decoration:none">
+      <div class="eyebrow sans">Latest &middot; Insolvency &amp; IBC</div>
+      <h2>Operational Debt and the Section 8 Demand Notice Under the IBC</h2>
+      <p>An operational creditor cannot go straight to the NCLT. This article explains how a Section 8 demand notice works, the ten-day window, and what makes it valid.</p>
+      <span class="ins-btn">Read article &rarr;</span>
+    </a>
+    <div class="ins-tools" role="group" aria-label="Filter articles by topic">
+      <button type="button" class="ins-chip" data-f="All" aria-pressed="true">All</button>
+      <button type="button" class="ins-chip" data-f="Insolvency &amp; IBC" aria-pressed="false">Insolvency &amp; IBC</button>
+      <button type="button" class="ins-chip" data-f="Arbitration &amp; Disputes" aria-pressed="false">Arbitration &amp; Disputes</button>
+      <button type="button" class="ins-chip" data-f="Litigation &amp; Disputes" aria-pressed="false">Litigation &amp; Disputes</button>
+      <button type="button" class="ins-chip" data-f="Corporate &amp; Contracts" aria-pressed="false">Corporate &amp; Contracts</button>
+      <button type="button" class="ins-chip" data-f="Startups &amp; SMEs" aria-pressed="false">Startups &amp; SMEs</button>
+      <button type="button" class="ins-chip" data-f="International Clients" aria-pressed="false">International Clients</button>
+      <input type="search" class="ins-search" id="ins-q" placeholder="Search articles" aria-label="Search articles">
     </div>
+    <div class="ins-count" id="ins-count" aria-live="polite"></div>
+    <div class="ins-grid" id="ins-grid">
+      <article class="ins-card" data-cat="Insolvency &amp; IBC" data-text="pre-existing disputes: why many section 9 petitions fail a genuine pre-existing dispute is the single most common defence to a section 9 ibc petition. this article explains the test and what both sides should do.">
+        <div class="ins-meta"><span class="ins-cat">Insolvency &amp; IBC</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-pre-existing-dispute-section-9.html">Pre-Existing Disputes: Why Many Section 9 Petitions Fail</a></h3>
+        <p>A genuine pre-existing dispute is the single most common defence to a Section 9 IBC petition. This article explains the test and what both sides should do.</p>
+        <a href="insight-pre-existing-dispute-section-9.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Litigation &amp; Disputes" data-text="section 12a of the commercial courts act: pre-institution mediation explained many commercial suits must go through mediation before they can be filed. this article explains section 12a, the urgent-relief exception and the cost of skipping it.">
+        <div class="ins-meta"><span class="ins-cat">Litigation &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-section-12a-pre-institution-mediation.html">Section 12A of the Commercial Courts Act: Pre-Institution Mediation Explained</a></h3>
+        <p>Many commercial suits must go through mediation before they can be filed. This article explains Section 12A, the urgent-relief exception and the cost of skipping it.</p>
+        <a href="insight-section-12a-pre-institution-mediation.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Arbitration &amp; Disputes" data-text="interim relief in arbitration: section 9 and section 17 explained how a party can secure assets, evidence or status quo before and during arbitration in india, and how courts and tribunals divide the work.">
+        <div class="ins-meta"><span class="ins-cat">Arbitration &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-arbitration-interim-relief-section-9-17.html">Interim Relief in Arbitration: Section 9 and Section 17 Explained</a></h3>
+        <p>How a party can secure assets, evidence or status quo before and during arbitration in India, and how courts and tribunals divide the work.</p>
+        <a href="insight-arbitration-interim-relief-section-9-17.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Insolvency &amp; IBC" data-text="the section 14 moratorium: what it stops and what it does not once a company enters cirp, a moratorium freezes most proceedings against it. this article explains its scope, its limits and the position of directors and guarantors.">
+        <div class="ins-meta"><span class="ins-cat">Insolvency &amp; IBC</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-moratorium-section-14-ibc.html">The Section 14 Moratorium: What It Stops and What It Does Not</a></h3>
+        <p>Once a company enters CIRP, a moratorium freezes most proceedings against it. This article explains its scope, its limits and the position of directors and guarantors.</p>
+        <a href="insight-moratorium-section-14-ibc.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Litigation &amp; Disputes" data-text="summary suits under order xxxvii cpc: a faster route to recover money a summary suit lets a plaintiff recover a clear money claim without a full trial unless the defendant shows a real defence. here is how order xxxvii works.">
+        <div class="ins-meta"><span class="ins-cat">Litigation &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-summary-suit-order-37-cpc.html">Summary Suits Under Order XXXVII CPC: A Faster Route to Recover Money</a></h3>
+        <p>A summary suit lets a plaintiff recover a clear money claim without a full trial unless the defendant shows a real defence. Here is how Order XXXVII works.</p>
+        <a href="insight-summary-suit-order-37-cpc.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Corporate &amp; Contracts" data-text="5 contract clauses every growing business should review overlooked terms in vendor and client agreements can create outsized risk. here&#x27;s what to check before you sign.">
+        <div class="ins-meta"><span class="ins-cat">Corporate &amp; Contracts</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-contract-clauses-review.html">5 Contract Clauses Every Growing Business Should Review</a></h3>
+        <p>Overlooked terms in vendor and client agreements can create outsized risk. Here's what to check before you sign.</p>
+        <a href="insight-contract-clauses-review.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Insolvency &amp; IBC" data-text="understanding the cirp timeline under the ibc a plain-language walkthrough of what happens, and in what order, once a corporate insolvency resolution process begins.">
+        <div class="ins-meta"><span class="ins-cat">Insolvency &amp; IBC</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-cirp-timeline-explained.html">Understanding the CIRP Timeline Under the IBC</a></h3>
+        <p>A plain-language walkthrough of what happens, and in what order, once a Corporate Insolvency Resolution Process begins.</p>
+        <a href="insight-cirp-timeline-explained.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Startups &amp; SMEs" data-text="choosing the right business structure for your startup private limited company, llp, or partnership? the right structure affects fundraising, liability, and taxes down the road.">
+        <div class="ins-meta"><span class="ins-cat">Startups &amp; SMEs</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-choosing-business-structure.html">Choosing the Right Business Structure for Your Startup</a></h3>
+        <p>Private limited company, LLP, or partnership? The right structure affects fundraising, liability, and taxes down the road.</p>
+        <a href="insight-choosing-business-structure.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Insolvency &amp; IBC" data-text="section 7 vs section 9 of the ibc: which route applies to you financial creditors and operational creditors take different statutory routes into the insolvency process — here&#x27;s the difference.">
+        <div class="ins-meta"><span class="ins-cat">Insolvency &amp; IBC</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-section-7-vs-section-9.html">Section 7 vs Section 9 of the IBC: Which Route Applies to You</a></h3>
+        <p>Financial creditors and operational creditors take different statutory routes into the insolvency process — here's the difference.</p>
+        <a href="insight-section-7-vs-section-9.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Arbitration &amp; Disputes" data-text="mediation vs. litigation: what indian businesses should know not every dispute needs a courtroom. we break down when alternative dispute resolution makes sense — and when it doesn&#x27;t.">
+        <div class="ins-meta"><span class="ins-cat">Arbitration &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-mediation-vs-litigation.html">Mediation vs. Litigation: What Indian Businesses Should Know</a></h3>
+        <p>Not every dispute needs a courtroom. We break down when alternative dispute resolution makes sense — and when it doesn't.</p>
+        <a href="insight-mediation-vs-litigation.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Startups &amp; SMEs" data-text="founder equity and vesting: common mistakes we see getting the initial equity split right matters less than most founders think. getting the vesting terms right matters much more.">
+        <div class="ins-meta"><span class="ins-cat">Startups &amp; SMEs</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-founder-equity-vesting-mistakes.html">Founder Equity and Vesting: Common Mistakes We See</a></h3>
+        <p>Getting the initial equity split right matters less than most founders think. Getting the vesting terms right matters much more.</p>
+        <a href="insight-founder-equity-vesting-mistakes.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Litigation &amp; Disputes" data-text="cheque bounce cases in india: what section 138 actually means a dishonoured cheque isn&#x27;t just a banking problem — for the person who issued it, it can become a criminal case.">
+        <div class="ins-meta"><span class="ins-cat">Litigation &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-cheque-bounce-section-138.html">Cheque Bounce Cases in India: What Section 138 Actually Means</a></h3>
+        <p>A dishonoured cheque isn't just a banking problem — for the person who issued it, it can become a criminal case.</p>
+        <a href="insight-cheque-bounce-section-138.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Corporate &amp; Contracts" data-text="can you be sued over a verbal agreement in india? yes — and this is one of the most misunderstood areas of contract law we encounter. here&#x27;s why.">
+        <div class="ins-meta"><span class="ins-cat">Corporate &amp; Contracts</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-verbal-agreement-enforceability.html">Can You Be Sued Over a Verbal Agreement in India?</a></h3>
+        <p>Yes — and this is one of the most misunderstood areas of contract law we encounter. Here's why.</p>
+        <a href="insight-verbal-agreement-enforceability.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Corporate &amp; Contracts" data-text="can a director be personally liable for company debts? limited liability protects directors in most circumstances — but not always. here are the real exceptions.">
+        <div class="ins-meta"><span class="ins-cat">Corporate &amp; Contracts</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-director-personal-liability.html">Can a Director Be Personally Liable for Company Debts?</a></h3>
+        <p>Limited liability protects directors in most circumstances — but not always. Here are the real exceptions.</p>
+        <a href="insight-director-personal-liability.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Insolvency &amp; IBC" data-text="what happens to a personal guarantee when a company enters insolvency many guarantors assume their personal guarantee is paused too. it usually isn&#x27;t — here&#x27;s why.">
+        <div class="ins-meta"><span class="ins-cat">Insolvency &amp; IBC</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-personal-guarantee-insolvency.html">What Happens to a Personal Guarantee When a Company Enters Insolvency</a></h3>
+        <p>Many guarantors assume their personal guarantee is paused too. It usually isn't — here's why.</p>
+        <a href="insight-personal-guarantee-insolvency.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Litigation &amp; Disputes" data-text="what actually happens if you ignore a legal notice it&#x27;s not a court order, so nothing happens immediately — but ignoring one is rarely the safe option it seems.">
+        <div class="ins-meta"><span class="ins-cat">Litigation &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-ignoring-legal-notice.html">What Actually Happens If You Ignore a Legal Notice</a></h3>
+        <p>It's not a court order, so nothing happens immediately — but ignoring one is rarely the safe option it seems.</p>
+        <a href="insight-ignoring-legal-notice.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="International Clients" data-text="nri property and legal disputes: managing matters in india from abroad distance is a real complication — but it isn&#x27;t the obstacle most nris assume it is, with the right structure in place.">
+        <div class="ins-meta"><span class="ins-cat">International Clients</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-nri-property-disputes.html">NRI Property and Legal Disputes: Managing Matters in India From Abroad</a></h3>
+        <p>Distance is a real complication — but it isn't the obstacle most NRIs assume it is, with the right structure in place.</p>
+        <a href="insight-nri-property-disputes.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Corporate &amp; Contracts" data-text="are non-disclosure agreements actually enforceable in india? yes, but enforceability depends heavily on how specifically the agreement is drafted.">
+        <div class="ins-meta"><span class="ins-cat">Corporate &amp; Contracts</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-nda-enforceability.html">Are Non-Disclosure Agreements Actually Enforceable in India?</a></h3>
+        <p>Yes, but enforceability depends heavily on how specifically the agreement is drafted.</p>
+        <a href="insight-nda-enforceability.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Corporate &amp; Contracts" data-text="what to do when a business partner wants to exit this moment goes wrong far more often from a lack of process than from bad intentions on either side.">
+        <div class="ins-meta"><span class="ins-cat">Corporate &amp; Contracts</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-business-partner-exit.html">What to Do When a Business Partner Wants to Exit</a></h3>
+        <p>This moment goes wrong far more often from a lack of process than from bad intentions on either side.</p>
+        <a href="insight-business-partner-exit.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Arbitration &amp; Disputes" data-text="the fine print in arbitration clauses most people never read a handful of details buried in the boilerplate can dramatically affect your leverage if a dispute ever arises.">
+        <div class="ins-meta"><span class="ins-cat">Arbitration &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-arbitration-clause-fine-print.html">The Fine Print in Arbitration Clauses Most People Never Read</a></h3>
+        <p>A handful of details buried in the boilerplate can dramatically affect your leverage if a dispute ever arises.</p>
+        <a href="insight-arbitration-clause-fine-print.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="Litigation &amp; Disputes" data-text="when does a business dispute become a criminal matter? most commercial disputes are purely civil — but some conduct crosses into criminal territory.">
+        <div class="ins-meta"><span class="ins-cat">Litigation &amp; Disputes</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-civil-vs-criminal-business-dispute.html">When Does a Business Dispute Become a Criminal Matter?</a></h3>
+        <p>Most commercial disputes are purely civil — but some conduct crosses into criminal territory.</p>
+        <a href="insight-civil-vs-criminal-business-dispute.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="International Clients" data-text="how a foreign law firm engages local counsel in india engaging india-based counsel for the first time doesn&#x27;t need to be complicated — here&#x27;s how it typically works.">
+        <div class="ins-meta"><span class="ins-cat">International Clients</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-engaging-local-counsel-india.html">How a Foreign Law Firm Engages Local Counsel in India</a></h3>
+        <p>Engaging India-based counsel for the first time doesn't need to be complicated — here's how it typically works.</p>
+        <a href="insight-engaging-local-counsel-india.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="International Clients" data-text="what overseas firms should know before referring an nri property matter a handful of details, clarified before the referral is made, meaningfully speed up how quickly counsel can act.">
+        <div class="ins-meta"><span class="ins-cat">International Clients</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-referring-nri-property-matter.html">What Overseas Firms Should Know Before Referring an NRI Property Matter</a></h3>
+        <p>A handful of details, clarified before the referral is made, meaningfully speed up how quickly counsel can act.</p>
+        <a href="insight-referring-nri-property-matter.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="ins-card" data-cat="International Clients" data-text="enforcing a foreign judgment or arbitral award in india the enforcement route depends heavily on one distinction that&#x27;s easy to overlook early.">
+        <div class="ins-meta"><span class="ins-cat">International Clients</span><span class="ins-rt">3 min read</span></div>
+        <h3><a href="insight-enforcing-foreign-judgment-india.html">Enforcing a Foreign Judgment or Arbitral Award in India</a></h3>
+        <p>The enforcement route depends heavily on one distinction that's easy to overlook early.</p>
+        <a href="insight-enforcing-foreign-judgment-india.html" class="ins-more">Read article <span aria-hidden="true">&rarr;</span></a>
+      </article>
+    </div>
+    <p class="ins-empty" id="ins-empty">No articles match your search. Try a different topic or keyword.</p>
   </div>
 </section>
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('.ins-card')),chips=[].slice.call(document.querySelectorAll('.ins-chip')),q=document.getElementById('ins-q'),cnt=document.getElementById('ins-count'),empty=document.getElementById('ins-empty'),cur='All';
+  function run(){var t=(q.value||'').toLowerCase().trim(),n=0;cards.forEach(function(c){var ok=(cur==='All'||c.getAttribute('data-cat')===cur)&&(!t||c.getAttribute('data-text').indexOf(t)>-1);c.hidden=!ok;if(ok)n++;});cnt.textContent=n+(n===1?' article':' articles');empty.style.display=n?'none':'block';}
+  chips.forEach(function(b){b.addEventListener('click',function(){cur=b.getAttribute('data-f');chips.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});run();});});
+  q.addEventListener('input',run);run();
+})();
+</script>
 
 <div class="cta-banner">
   <div class="container">
